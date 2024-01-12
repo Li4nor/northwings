@@ -978,3 +978,96 @@
     padding: 100px 30px;
   }
 }
+
+/* ------------------------------------------ Food menu */
+
+.food-menu-section {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #f8e8d9;
+}
+
+.FMH {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.galleries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 4rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 6px solid #df7701;
+  border-radius: 1rem;
+  width: 300px;
+  position: relative;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  transition: transform 300ms ease;
+}
+
+.gallery:hover {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  min-width: 270px;
+  max-width: 270px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0;
+  white-space: nowrap;
+}
+
+.listprice {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1350px) {
+  .galleries {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .galleries {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .food-menu-section {
+    padding: 100px 30px;
+  }
+
+  .FMH {
+    font-size: 2.5rem;
+  }
+
+  .galleries {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+}
